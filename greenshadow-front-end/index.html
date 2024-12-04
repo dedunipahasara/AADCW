@@ -357,6 +357,84 @@
     </div>
 </section>
 
+<section id="cropSection">
+    <br>
+    <br>
+    <h1>Crop Management</h1>
+    <div class="container-fluid">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <!-- First Glass Card (Small) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="glass-card small">
+                        <form id="cropForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="cropId" class="form-label">Crop ID</label>
+                                    <input type="text" class="form-control" id="cropId" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="commonName" class="form-label">Common Name</label>
+                                    <input type="text" class="form-control" id="commonName" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="specificName" class="form-label">Specific Name</label>
+                                    <input type="text" class="form-control" id="specificName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="category" class="form-label">Category</label>
+                                    <input type="text" class="form-control" id="category" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="season" class="form-label">Season</label>
+                                    <input type="text" class="form-control" id="season" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="fieldId" class="form-label">Field ID</label>
+                                    <input type="text" class="form-control" id="field_Id" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <label for="imageFile" class="form-label">Image</label>
+                                    <input type="file" class="form-control" id="imageFile" accept="image/*">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Crop</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Second Glass Card (Large) -->
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="glass-card large">
+                        <table id="cropTable" class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">CropId</th>
+                                <th scope="col">Common Name</th>
+                                <th scope="col">Specific Name</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Season</th>
+                                <th scope="col">FieldId</th>
+                                <th scope="col">Image</th>
+                            </tr>
+                            </thead>
+                            <tbody id="cropTableBody">
+                            <!-- Crop rows will be appended here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
