@@ -619,7 +619,106 @@
 
 </section>
 
+<section id="vehicleSection">
+    <br>
+    <br>
+    <h1>Vehicles</h1>
+    <div class="container-fluid">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <!-- First Glass Card (Small) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="glass-card small">
+                        <form id="vehicleForm">
+                            <div class="row mb-3">
+                                <!-- Vehicle ID -->
+                                <div class="col-md-6">
+                                    <label for="vehicleId" class="form-label">Vehicle ID</label>
+                                    <input type="text" id="vehicleId" name="vehicleId" class="form-control" placeholder="Enter Vehicle ID" required>
+                                </div>
+                                <!-- Plate Number -->
+                                <div class="col-md-6">
+                                    <label for="plateNumber" class="form-label">Plate Number</label>
+                                    <input type="text" id="plateNumber" name="plateNumber" class="form-control" placeholder="Enter Plate Number" required>
+                                </div>
+                            </div>
 
+                            <div class="row mb-3">
+                                <!-- Category -->
+                                <div class="col-md-6">
+                                    <label for="vehicategory" class="form-label">Category</label>
+                                    <input type="text" id="vehicategory" name="category" class="form-control" placeholder="Enter Category" required>
+                                </div>
+                                <!-- Fuel Type -->
+                                <div class="col-md-6">
+                                    <label for="fuelType" class="form-label">Fuel Type</label>
+                                    <input type="text" id="fuelType" name="fuelType" class="form-control" placeholder="Enter Fuel Type" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <!-- Status -->
+                                <div class="col-md-6">
+                                    <label for="vehistatus" class="form-label">Status</label>
+                                    <input type="text" id="vehistatus" name="status" class="form-control" placeholder="Enter Status" required>
+                                </div>
+                                <!-- Remarks -->
+                                <div class="col-md-6">
+                                    <label for="remarks" class="form-label">Remarks</label>
+                                    <textarea id="remarks" name="remarks" class="form-control" rows="2" placeholder="Enter Remarks"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <!-- Staff -->
+                                <div class="col-md-6">
+                                    <label for="staffie" class="form-label">Staff</label>
+                                    <select id="staffie" name="staff" class="form-select" required>
+                                        <option value="">Select Staff</option>
+                                        <!-- Populate dynamically -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <button type="submit" class="btn  btn-save">Save Vehicle</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Second Glass Card (Large) -->
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="glass-card large">
+                        <table id="vehicleTable" class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col"> VehicleId </th>
+                                <th scope="col"> PlateNumber </th>
+                                <th scope="col"> Catergory </th>
+                                <th scope="col"> FuelType </th>
+                                <th scope="col"> Status </th>
+                                <th scope="col"> Remarks </th>
+                                <th scope="col"> Staff Id</th>
+
+                            </tr>
+                            </thead>
+                            <tbody id="vehicleTableBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 
