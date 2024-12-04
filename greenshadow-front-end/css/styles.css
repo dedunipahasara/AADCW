@@ -196,3 +196,183 @@
         font-size: 12px;
     }
 }
+
+section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+#dashboardSection,
+#staffSection,
+#fieldSection,
+#cropSection,
+#logSection,
+#equipmentSection,
+#vehicleSection {
+    background: linear-gradient(890deg, #5a50a9, #667545, #7b613e); /* Blend of deep blue, muted green, and soft yellow */
+    box-shadow: 0 0 20px rgba(122, 95, 112, 0.6); /* Subtle glow effect */
+}
+
+/* Headings Styling */
+section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: none; /* No glow effect */
+}
+
+/* Styling for the Glass Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.glass-card:nth-child(-n+3) {
+    max-width: 2100px;
+    margin-bottom: 20px;
+}
+
+/*.glass-card:nth-child(4) {*/
+/*    max-width: 1150px;*/
+/*    margin-top: 40px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/* To center all the cards within the row */
+.row.justify-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Media Query for the Fourth Card */
+@media (max-width: 768px) {
+    .glass-card:nth-child(4) {
+        max-width: 100%; /* Ensure full width on small screens */
+        margin: 20px 0;
+    }
+
+    .glass-card:nth-child(-n+3) {
+        max-width: 100%;
+    }
+}
+
+/* Section Background Styling */
+
+
+/* Headings Styling */
+
+/* Glass Card Styling */
+
+
+/* Hover Effect for Glass Cards */
+
+
+/* Styling for First Three Glass Cards (Same Size but Bigger) */
+
+/* Styling for the Fourth Glass Card (Larger, Under the First Three) */
+
+
+
+/* Style for the content inside the Glass Card */
+
+
+
+.glass-card button {
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent button */
+    border: none;
+    color: #333; /* Dark text color */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.glass-card button:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Change background on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+.card.transparentC {
+    position: relative;
+    z-index: 2; /* Ensure the card stays on top */
+}
+
+/* Card Styling */
+/* Card Styling */
+/* Additional styles */
+/*.glass-card.large {*/
+/*    width: 200%; !* Take up full width *!*/
+/*    height: 100%; !* Adjust height *!*/
+/*    padding: 20px;*/
+/*    background: rgba(255, 255, 255, 0.3); !* Transparent background *!*/
+/*    backdrop-filter: blur(10px); !* Glass effect *!*/
+/*    border-radius: 10px; !* Rounded corners *!*/
+/*}*/
+
+/* To make the 4th card large and center it properly */
+/*.row.justify-content-center {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*!* Make sure it's bigger than the three previous cards *!*/
+/*.glass-card.large h2, .glass-card.large p {*/
+/*    font-size: 1.5rem; !* Adjust text size *!*/
+/*}*/
+
+/*!* Responsive design for smaller screens *!*/
+/*@media (max-width: 768px) {*/
+/*    .glass-card.large {*/
+/*        width: 100%; !* Full width on smaller screens *!*/
+/*        height: auto;*/
+/*    }*/
+/*}*/
+
+
+/* Button Styling */
+.btn-primary {
+    background: #fff; /* White background */
+    color: #5a50a9; /* Complementary gradient color */
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #f0f0f0; /* Slightly darker hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: #5a50a9;
+}
+.btn-save{
+    background-color: #376a39;
+}
