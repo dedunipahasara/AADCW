@@ -268,6 +268,95 @@
 
 </section>
 
+<section id="fieldSection">
+    <br>
+    <br>
+    <h1>Field Management</h1>
+    <div class="container-fluid">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <!-- First Glass Card (Small) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="glass-card small">
+                        <form id="fieldForm" class="container mt-4">
+                            <div class="row mb-3">
+                                <!-- Field ID -->
+                                <div class="col-md-6">
+                                    <label for="fieldId" class="form-label">Field ID</label>
+                                    <input type="text" class="form-control" id="fieldId" required>
+                                </div>
+                                <!-- Field Name -->
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Field Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <!-- Location -->
+                                <div class="col-md-6">
+                                    <label for="location" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="location" required>
+                                </div>
+                                <!-- Size -->
+                                <div class="col-md-6">
+                                    <label for="size" class="form-label">Size</label>
+                                    <input type="number" class="form-control" id="size" step="0.01" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <!-- Image 1 -->
+                                <div class="col-md-12">
+                                    <label for="image1" class="form-label">Image 1</label>
+                                    <input type="file" class="form-control" id="image1" accept="image/*" required>
+                                </div>
+                                <!-- Image 2 -->
+                                <div class="col-md-12">
+                                    <label for="image2" class="form-label">Image 2</label>
+                                    <input type="file" class="form-control" id="image2" accept="image/*">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="staffCode" class="form-label">Staff Id</label>
+                                    <select type="file" class="form-control" id="staffCode" ></select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-save">Save Field</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Second Glass Card (Large) -->
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="glass-card large">
+                        <table id="filedTable" class="fieldtable table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">FieldId</th>
+                                <th scope="col">Field Name</th>
+                                <th scope="col">Field Location</th>
+                                <th scope="col">Field Size</th>
+                                <th scope="col">Image 1</th>
+                                <th scope="col">Image 2</th>
+                                <th scope="col">StaffCode</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!-- Rows will be appended here dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
