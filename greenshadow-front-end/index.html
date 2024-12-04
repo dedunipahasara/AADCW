@@ -139,7 +139,134 @@
 
 </section>
 
+<!-- Other Sections -->
+<section id="staffSection">
+    <br>
+    <br>
+    <h1>Staff Management</h1>
+    <div class="container mt-8">
+        <div class="row justify-content-center">
+            <!-- First Glass Card (Small) -->
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="glass-card small">
+                    <form id="staffForm">
+                        <div class="row mb-4">
+                            <div class="col-md-4">
 
+                            </div>
+                            <div class="col-md-4">
+                                <label for="staffId" class="form-label">Staff ID</label>
+                                <input type="text" class="form-control" id="staffId" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender" required>
+                                    <option value="MALE">Male</option>
+                                    <option value="FEMALE">Female</option>
+                                    <option value="OTHER">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="designation" class="form-label">Designation</label>
+                                <input type="text" class="form-control" id="designation" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="address" class="form-label">Address</label>
+                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="contact" class="form-label">Contact</label>
+                                <input type="text" class="form-control" id="contact" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="joinDate" class="form-label">Join Date</label>
+                                <input type="date" class="form-control" id="joinDate" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="role" class="form-label">Role</label>
+                                <select class="form-select" id="role" required>
+                                    <option value="MANAGER">Manager</option>
+                                    <option value="ADMINISTRATOR">Administrator</option>
+                                    <option value="SCIENTIST">Scientist</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col text-end">
+                                <button type="submit" class="btn btn-save">Save Staff</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+            <!-- Second Glass Card (Large) -->
+            <div class="col-12 ">
+                <div class="glass-card large" style="max-width:1900px">
+                    <table id="staffTable" class="staffTable table-bordered"style="background-color: black; border-radius: 20px;" >
+                        <thead style="background-color: white; color: black ;border-radius: 20px">
+                        <tr>
+                            <th scope="col">Staff Id</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">gender</th>
+                            <th scope="col">destination</th>
+
+                            <th scope="col">Email</th>
+                            <th scope="col">Dob</th>
+
+                            <th scope="col">Address</th>
+                            <th scope="col">Contact</th>
+                            <th scope="col">Join Date</th>
+                            <th scope="col">Role</th>
+
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
 
 
 
