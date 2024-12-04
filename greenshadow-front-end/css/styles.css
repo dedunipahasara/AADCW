@@ -4,6 +4,7 @@
     justify-content: center;  /* Centers horizontally */
     align-items: center;      /* Centers vertically */
     height: 100vh;            /* Full viewport height */
+    background: url("https://images.pexels.com/photos/325944/pexels-photo-325944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed;
     background-size: cover;
 }
 
