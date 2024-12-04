@@ -75,15 +75,21 @@ $(document).ready(function () {
         $("#mainNavbar").hide();
     }
 
-    // Handle the login form submission
-    $("#loginForm").submit(async function (event) {
+     // Handle the login form submission
+     $("#loginForm").submit(async function (event) {
         event.preventDefault();
 
         const email = $("#loginEmail").val().trim();
         const password = $("#loginPassword").val().trim();
 
         if (!email || !password) {
-            Swal.fire("Incomplete Fields", "Please fill in both email and password.", "warning");
+            Swal.fire({
+                iconHtml: "<i class='bx bxs-bug-alt' style='color: red; font-size: 24px;'></i>",
+                title: "Incomplete Fields",
+                text: "Please fill in both email and password.",
+                showConfirmButton: true,
+                confirmButtonColor: "#d33",
+            });
             return;
         }
 
@@ -103,7 +109,13 @@ $(document).ready(function () {
             const data = await response.json();
             if (data.token) {
                 localStorage.setItem("authToken", data.token);
-                Swal.fire("Login Successful", "Redirecting to your dashboard...", "success");
+                Swal.fire({
+                    iconHtml: "<i class='bx bxs-leaf' style='color: green; font-size: 24px;'></i>",
+                    title: "Login Successful",
+                    text: "Redirecting to your dashboard... 😇",
+                    showConfirmButton: false,
+                    timer: 2000,
+                });
 
                 setTimeout(() => {
                     $("#loginSection").hide();
@@ -111,10 +123,16 @@ $(document).ready(function () {
                     showSection("dashboardSection");
                 }, 2000);
             } else {
-                Swal.fire("Error", "Unexpected response. Please try again later.", "error");
+                throw new Error("Unexpected response format.");
             }
         } catch (error) {
-            Swal.fire("Login Failed", error.message || "An error occurred. Please try again.", "error");
+            Swal.fire({
+                iconHtml: "<i class='bx bxs-bug-alt' style='color: red; font-size: 24px;'></i>",
+                title: "Login Failed",
+                text: error.message || "An error occurred. Please try again.",
+                showConfirmButton: true,
+                confirmButtonColor: "#d33",
+            });
         }
     });
 });
