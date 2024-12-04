@@ -434,6 +434,190 @@
         </div>
     </div>
 </section>
+<section id="logSection">
+    <br>
+    <br>
+    <h1 class="text-center mb-4">Logs</h1>
+    <div class="row justify-content-center g-4">
+        <!-- Form Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass-card small p-3">
+                <form id="logForm" enctype="multipart/form-data">
+                    <!-- Log ID -->
+                    <div class="row mb3">
+                        <div class="col-md-6">
+                            <label for="logId">Log ID</label>
+                            <input type="text" id="logId" class="form-control" required />
+                        </div>
+
+                        <!-- Log Date -->
+                        <div class="col-md-6">
+                            <label for="logDate">Log Date</label>
+                            <input type="date" id="logDate" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <!-- Log Description -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="logDetails">Log Description</label>
+                            <textarea id="logDetails" class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <!-- Log Image -->
+                        <div class="col-md-6">
+                            <label for="imageFile2">Log Image</label>
+                            <input type="file" id="imageFile2" class="form-control" accept="image/*" />
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="fieldSelector">Field ID</label>
+                            <select id="fieldSelector" class="form-control"></select>
+                        </div>
+
+                        <!-- Crop ID -->
+                        <div class="col-md-4">
+                            <label for="cropSelector">Crop ID</label>
+                            <select id="cropSelector" class="form-control"></select>
+                        </div>
+
+                        <!-- Staff ID -->
+                        <div class="col-md-4">
+                            <label for="staffSelector">Staff ID</label>
+                            <select id="staffSelector" class="form-control"></select>
+                        </div>
+                    </div>
+                    <!-- Field ID -->
+
+
+
+                    <button type="submit" class="btn btn-primary w-50">Save Log</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Table Card -->
+        <div class="glass-card large-card col-12 col-md-6">
+            <div class="p-3">
+                <h2>Log Details</h2>
+                <table id="logTable" class="table table-bordered" >
+                    <thead class="thead-light">
+                    <tr>
+                        <th>Log ID</th>
+                        <th>Log Description</th>
+                        <th>Log Date</th>
+                        <th>Log Image</th>
+                        <th>Field ID</th>
+                        <th>Crop ID</th>
+                        <th>Staff ID</th>
+                    </tr>
+                    </thead>
+                    <tbody id="logTableBody" style="background: #7b613e"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="equipmentSection">
+    <br>
+    <br>
+    <h1>Equipment</h1>
+    <div class="container-fluid">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <!-- First Glass Card (Small) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="glass-card small">
+                        <form id="equipmentForm">
+                            <div class="row mb-3">
+                                <!-- Equipment ID -->
+                                <div class="col-md-6">
+                                    <label for="equipmentId" class="form-label">Equipment ID:</label>
+                                    <input type="text" id="equipmentId" name="equipmentId" class="form-control" placeholder="Enter Equipment ID" required>
+                                </div>
+                                <!-- Equipment Type -->
+                                <div class="col-md-6">
+                                    <label for="type" class="form-label">Type:</label>
+                                    <input type="text" id="type" name="type" class="form-control" placeholder="Enter Equipment Type" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <!-- Equipment Name -->
+                                <div class="col-md-6">
+                                    <label for="eqname" class="form-label">Name:</label>
+                                    <input type="text" id="eqname" name="name" class="form-control" placeholder="Enter Equipment Name" required>
+                                </div>
+                                <!-- Equipment Status -->
+                                <div class="col-md-6">
+                                    <label for="status" class="form-label">Status:</label>
+                                    <input type="text" id="status" name="status" class="form-control" placeholder="Enter Equipment Status" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <!-- Field ID -->
+<!--                                <div class="col-md-6">-->
+<!--                                    <label for="fieldIds" class="form-label">Field ID:</label>-->
+<!--                                    <input id="fieldIds" name="fieldId" class="form-select" required>-->
+
+
+
+<!--                                </div>-->
+<!--                                &lt;!&ndash; Staff ID &ndash;&gt;-->
+<!--                                <div class="col-md-6">-->
+<!--                                    <label for="staffIds" class="form-label">Staff ID:</label>-->
+<!--                                    <input id="staffIds" name="staffId" class="form-select" required>-->
+
+
+
+<!--                                </div>-->
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-save">Save Equipment</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Second Glass Card (Large) -->
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="glass-card large">
+                        <table id="equipmentTable" class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">EquipmentId</th>
+                                <th scope="col">Equipment Type</th>
+                                <th scope="col">Equipment Name</th>
+                                <th scope="col">Status</th>
+<!--                                <th scope="col">Field Id</th>-->
+<!--                                <th scope="col">Staff Id</th>-->
+
+                            </tr>
+                            </thead>
+                            <tbody id="equipmentTableBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 
