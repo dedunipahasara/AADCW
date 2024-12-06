@@ -1,4 +1,20 @@
-/* Background Image for Login Section */
+/**!Background Image for Login Section**/
+.nav {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: start; /* Center items horizontally */
+    gap: 10px;
+    left:0px/* Add spacing between items */
+}
+
+.nav-item {
+    text-align:left;
+}
+
+.bx {
+    font-size: 24px;
+}
+
 #loginSection {
     display: flex;
     justify-content: center;  /* Centers horizontally */
@@ -196,7 +212,8 @@
         font-size: 12px;
     }
 }
-
+/* General Section Styling */
+/* General Section Styling */
 section {
     min-height: 100vh;
     padding: 50px 20px;
@@ -298,7 +315,9 @@ section h1 {
 
 
 /* Style for the content inside the Glass Card */
-
+.btn-save{
+    background-color: #413ca4;
+}
 
 
 .glass-card button {
@@ -357,16 +376,16 @@ section h1 {
 
 
 /* Button Styling */
-.btn-primary {
-    background: #fff; /* White background */
-    color: #5a50a9; /* Complementary gradient color */
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
+/*.btn-primary {*/
+/*    background: #fff; !* White background *!*/
+/*    color: #5a50a9; !* Complementary gradient color *!*/
+/*    border: none;*/
+/*    border-radius: 50px;*/
+/*    padding: 10px 20px;*/
+/*    font-weight: bold;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); !* Subtle button shadow *!*/
+/*    transition: background 0.3s ease, box-shadow 0.3s ease;*/
+/*}*/
 
 .btn-primary:hover {
     background: #f0f0f0; /* Slightly darker hover effect */
@@ -376,3 +395,5 @@ section h1 {
 .btn-save{
     background-color: #376a39;
 }
+
+
